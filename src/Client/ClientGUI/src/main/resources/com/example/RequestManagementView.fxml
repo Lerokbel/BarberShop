@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="575.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RequestManagementController">
+   <children>
+      <TableView fx:id="requestTable" layoutX="162.0" layoutY="14.0" prefHeight="547.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="151.1999969482422" text="Название" />
+            <TableColumn fx:id="colCost" prefWidth="68.0" text="Стоимость" />
+            <TableColumn fx:id="colDate" prefWidth="111.99993896484375" text="Дата" />
+            <TableColumn fx:id="colCreator" prefWidth="139.20001220703125" text="Клиент" />
+            <TableColumn fx:id="colPhone" prefWidth="116.79998779296875" text="Телефон" />
+        </columns>
+      </TableView>
+      <Button fx:id="applyButton" layoutX="33.0" layoutY="164.0" mnemonicParsing="false" onAction="#onApply" prefHeight="26.0" prefWidth="90.0" text="Одобрить" />
+      <Label layoutX="37.0" layoutY="14.0" text="Фильтрация:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="costFromInput" layoutX="21.0" layoutY="52.0" prefHeight="26.0" prefWidth="50.0" promptText="От" />
+      <TextField fx:id="costToInput" layoutX="86.0" layoutY="52.0" prefHeight="26.0" prefWidth="50.0" promptText="До" />
+      <TextField fx:id="nameInput" layoutX="21.0" layoutY="91.0" prefHeight="26.0" prefWidth="114.0" promptText="Название" />
+      <Label layoutX="48.0" layoutY="34.0" text="Стоимость:" />
+      <Button layoutX="33.0" layoutY="128.0" mnemonicParsing="false" onAction="#onApplyFilter" prefHeight="26.0" prefWidth="90.0" text="Применить" />
+      <Button layoutX="16.0" layoutY="535.0" mnemonicParsing="false" onAction="#onGoBack" prefHeight="26.0" prefWidth="90.0" text="Назад" />
+      <Button fx:id="discardButton" layoutX="33.0" layoutY="203.0" mnemonicParsing="false" onAction="#onDiscard" prefHeight="26.0" prefWidth="90.0" text="Отказ" />
+   </children>
+</AnchorPane>

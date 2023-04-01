@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.UserManagementController">
+   <children>
+      <Button fx:id="mastersBtn" layoutX="188.0" layoutY="400.0" mnemonicParsing="false" onAction="#onChangeView" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 30,30,30,30;" text="Сотрудники" />
+      <TableView fx:id="usersTable" layoutX="30.0" layoutY="48.0" prefHeight="338.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="columnFullName" prefWidth="194.0" text="ФИО" />
+          <TableColumn fx:id="columnPhone" prefWidth="134.0" text="Телефон" />
+            <TableColumn fx:id="columnStatus" prefWidth="111.0" text="Статус" />
+        </columns>
+      </TableView>
+       <TableView fx:id="mastersTable" layoutX="129.0" layoutY="14.0" prefHeight="372.0" prefWidth="412.0" visible="false">
+           <columns>
+               <TableColumn fx:id="columnMasterFullName" prefWidth="136.79998779296875" text="ФИО" />
+               <TableColumn fx:id="columnMasterExp" prefWidth="191.20001220703125" text="Стаж" />
+               <TableColumn fx:id="columnMasterStatus" prefWidth="81.60006713867188" text="Статус" />
+           </columns>
+       </TableView>
+      <Button layoutX="33.0" layoutY="400.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 30,30,30,30;" text="Редактировать" />
+      <Button layoutX="36.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBan" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 30,30,30,30;" text="Заблокировать" />
+      <Button layoutX="188.0" layoutY="447.0" mnemonicParsing="false" onAction="#onUnban" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 30,30,30,30;" text="Активировать" />
+      <Button layoutX="340.0" layoutY="400.0" mnemonicParsing="false" onAction="#onGoBack" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 30,30,30,30;" text="Назад" />
+      <Button fx:id="btnAdd" layoutX="340.0" layoutY="447.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 30,30,30,30;" text="Добавить" />
+      <Label layoutX="159.0" layoutY="4.0" text="Пользователи">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

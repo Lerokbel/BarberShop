@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.UserManagementController">
+   <children>
+      <Button fx:id="mastersBtn" layoutX="12.0" layoutY="119.0" mnemonicParsing="false" onAction="#onChangeView" prefHeight="26.0" prefWidth="101.0" text="Сотрудники" />
+      <TableView fx:id="usersTable" layoutX="129.0" layoutY="14.0" prefHeight="372.0" prefWidth="412.0">
+        <columns>
+          <TableColumn fx:id="columnFullName" prefWidth="136.79998779296875" text="ФИО" />
+          <TableColumn fx:id="columnPhone" prefWidth="191.20001220703125" text="Телефон" />
+            <TableColumn fx:id="columnStatus" prefWidth="81.60006713867188" text="Статус" />
+        </columns>
+      </TableView>
+       <TableView fx:id="mastersTable" layoutX="129.0" layoutY="14.0" prefHeight="372.0" prefWidth="412.0" visible="false">
+           <columns>
+               <TableColumn fx:id="columnMasterFullName" prefWidth="136.79998779296875" text="ФИО" />
+               <TableColumn fx:id="columnMasterExp" prefWidth="191.20001220703125" text="Стаж" />
+               <TableColumn fx:id="columnMasterStatus" prefWidth="81.60006713867188" text="Статус" />
+           </columns>
+       </TableView>
+      <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="26.0" prefWidth="101.0" text="Редактировать" />
+      <Button layoutX="11.0" layoutY="48.0" mnemonicParsing="false" onAction="#onBan" prefHeight="26.0" prefWidth="102.0" text="Заблокировать" />
+      <Button layoutX="11.0" layoutY="83.0" mnemonicParsing="false" onAction="#onUnban" prefHeight="26.0" prefWidth="102.0" text="Активировать" />
+      <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#onGoBack" prefHeight="26.0" prefWidth="102.0" text="Назад" />
+      <Button fx:id="btnAdd" layoutX="11.0" layoutY="155.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="26.0" prefWidth="101.0" text="Добавить" />
+   </children>
+</AnchorPane>

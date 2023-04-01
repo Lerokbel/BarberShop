@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="146.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ProfileController">
+   <children>
+      <TextField fx:id="fullnameInput" layoutX="14.0" layoutY="22.0" prefHeight="26.0" prefWidth="250.0" promptText="ФИО" />
+      <TextField fx:id="phoneInput" layoutX="14.0" layoutY="61.0" prefHeight="26.0" prefWidth="250.0" promptText="Телефон" />
+      <Button layoutX="14.0" layoutY="106.0" mnemonicParsing="false" onAction="#onOK" prefHeight="26.0" prefWidth="110.0" text="ОК" />
+      <Button layoutX="153.0" layoutY="106.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="110.0" text="Отмена" />
+   </children>
+</AnchorPane>

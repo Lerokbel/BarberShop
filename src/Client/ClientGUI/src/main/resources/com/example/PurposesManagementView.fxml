@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="309.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PurposesManagementController">
+   <children>
+      <TableView fx:id="typesTable" layoutX="148.0" layoutY="12.0" prefHeight="292.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="typeColumn" prefWidth="171.20001220703125" text="Услуга" />
+            <TableColumn fx:id="costColumn" prefWidth="76.79998779296875" text="Цена" />
+        </columns>
+      </TableView>
+      <Button fx:id="requestsButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onRequestsButton" prefHeight="26.0" prefWidth="123.0" text="Заявки на услуги" />
+      <Button fx:id="usersButton" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#onUsersManagement" prefHeight="26.0" prefWidth="123.0" text="Пользователи" />
+      <Button fx:id="historyButton" layoutX="14.0" layoutY="83.0" mnemonicParsing="false" onAction="#onHistory" prefHeight="26.0" prefWidth="123.0" text="Записи" />
+      <Button layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#onAbout" prefHeight="26.0" prefWidth="123.0" text="О программе" />
+      <Button layoutX="13.0" layoutY="274.0" mnemonicParsing="false" onAction="#onExit" prefHeight="26.0" prefWidth="123.0" text="Выход" />
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="159.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="26.0" prefWidth="123.0" text="Добавить" />
+      <Button fx:id="btnEdit" layoutX="14.0" layoutY="197.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="26.0" prefWidth="123.0" text="Редактировать" />
+      <Button fx:id="btnDel" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" onAction="#onDel" prefHeight="26.0" prefWidth="123.0" text="Удалить" />
+   </children>
+</AnchorPane>

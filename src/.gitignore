@@ -1,0 +1,6 @@
+# Project exclude paths
+/Client/ConnectionModule/target/
+/Entities/target/
+/Server/BusinessLayer/target/
+/Server/DataLayer/target/
+/Server/TransportLayer/target/

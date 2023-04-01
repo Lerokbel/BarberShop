@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RegistrationController">
+    <children>
+        <Button layoutX="134.0" layoutY="417.0" mnemonicParsing="false" onAction="#onEnter" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 30,30,30,30;" text="Ввод">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+        <TextField fx:id="lognInput" layoutX="218.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+        <PasswordField fx:id="passwordInput" layoutX="218.0" layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></PasswordField>
+        <Button layoutX="261.0" layoutY="417.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 30,30,30,30;" text="Отмена">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <PasswordField fx:id="repeatPasswordInput" layoutX="218.0" layoutY="192.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></PasswordField>
+      <TextField fx:id="fullnameInput" layoutX="218.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <TextField fx:id="telephoneInput" layoutX="218.0" layoutY="297.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <Button fx:id="btnChangeType" layoutX="134.0" layoutY="356.0" mnemonicParsing="false" onAction="#onChangeType" prefHeight="50.0" prefWidth="243.0" style="-fx-background-radius: 30,30,30,30;" text="Я сотрудник">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Button>
+      <Label layoutX="159.0" layoutY="14.0" text="Регистрация">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="95.0" text="Логин">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="148.0" text="Пароль">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="199.0" text="Повторите">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="251.0" text="ФИО">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="304.0" text="Телефон">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

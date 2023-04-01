@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RecordsManagementController">
+   <children>
+      <TableView fx:id="projectsTable" layoutX="184.0" layoutY="16.0" prefHeight="438.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="190.20001220703125" text="Название" />
+            <TableColumn fx:id="colCost" prefWidth="120.0" text="Стоимость" />
+            <TableColumn fx:id="colClient" prefWidth="123.0" text="Клиент" />
+            <TableColumn fx:id="colTelephone" prefWidth="155.0" text="Телефон" />
+            <TableColumn fx:id="colDate" prefWidth="176.0" text="Дата" />
+        </columns>
+      </TableView>
+      <Label layoutX="33.0" layoutY="79.0" text="Фильтрация">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="122.0" text="Стоимость">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <TextField fx:id="costFromInput" layoutX="18.0" layoutY="150.0" prefHeight="26.0" prefWidth="66.0" promptText="От" />
+      <TextField fx:id="costToInput" layoutX="103.0" layoutY="150.0" prefHeight="26.0" prefWidth="66.0" promptText="До" />
+      <TextField fx:id="nameSearchInput" layoutX="15.0" layoutY="222.0" prefHeight="31.0" prefWidth="154.0" promptText="Название" />
+      <Button layoutX="27.0" layoutY="324.0" mnemonicParsing="false" onAction="#onApply" prefHeight="26.0" prefWidth="130.0" style="-fx-background-radius: 30,30,30,30;" text="Применить">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="27.0" layoutY="477.0" mnemonicParsing="false" onAction="#onGoBack" prefHeight="26.0" prefWidth="130.0" style="-fx-background-radius: 30,30,30,30;" text="Назад">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="historyBtn" layoutX="281.0" layoutY="477.0" mnemonicParsing="false" onAction="#onHistory" prefHeight="26.0" prefWidth="130.0" style="-fx-background-radius: 30,30,30,30;" text="История">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="65.0" layoutY="194.0" text="Поиск">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelBtn" layoutX="429.0" layoutY="477.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="130.0" style="-fx-background-radius: 30,30,30,30;" text="Отказ">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <CheckBox fx:id="checkToday" layoutX="47.0" layoutY="285.0" mnemonicParsing="false" text="На сегодня" />
+   </children>
+</AnchorPane>

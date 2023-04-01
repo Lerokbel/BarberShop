@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="400.0" minWidth="800.0" prefHeight="400.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: #787878;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerGui.ServerController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <FlowPane alignment="CENTER" maxWidth="600.0" prefHeight="274.0" prefWidth="760.0" VBox.vgrow="NEVER">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="95.0" text="Server IP: " textFill="#e8e8e8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="serverIpLabel" prefHeight="20.0" prefWidth="150.0" textFill="#e8e8e8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="95.0" text="Server port: " textFill="#e8e8e8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="portLabel" prefHeight="18.0" prefWidth="91.0" textFill="#e8e8e8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" maxWidth="600.0" prefHeight="274.0" prefWidth="760.0">
+         <children>
+            <Button fx:id="runServerButton" alignment="CENTER" mnemonicParsing="false" onAction="#onRunServerButtonClick" prefHeight="53.0" prefWidth="150.0" text="Run server">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="stopServerButton" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#onStopServerButtonClick" prefHeight="53.0" prefWidth="150.0" text="Stop server">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="40.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER_LEFT" maxWidth="600.0" prefHeight="274.0" prefWidth="760.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="156.0" text="Connected clients:" textFill="#e8e8e8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="connectedClientsLabel" prefHeight="27.0" prefWidth="82.0" textFill="#e8e8e8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="refreshButton" disable="true" mnemonicParsing="false" onAction="#onRefreshButtonClick" prefHeight="26.0" prefWidth="66.0" text="Refresh" />
+         </children>
+      </FlowPane>
+   </children>
+</VBox>

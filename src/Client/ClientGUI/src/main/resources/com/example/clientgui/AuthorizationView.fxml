@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AuthorizationController">
+   <children>
+      <Button layoutX="116.0" layoutY="321.0" mnemonicParsing="false" onAction="#onEnter" prefHeight="44.0" prefWidth="150.0" style="-fx-background-radius: 30,30,30,30;" text="Вход">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TextField fx:id="loginInput" layoutX="228.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordInput" layoutX="228.0" layoutY="224.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="206.0">
+         <font>
+            <Font size="21.0" />
+         </font></PasswordField>
+      <Button layoutX="278.0" layoutY="321.0" mnemonicParsing="false" onAction="#onRegistration" prefHeight="44.0" prefWidth="150.0" style="-fx-background-radius: 30,30,30,30;" text="Регистрация">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="170.0" layoutY="45.0" text="Авторизация">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="157.0" text="Логин">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="231.0" text="Пароль">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

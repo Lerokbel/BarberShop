@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RequestManagementController">
+   <children>
+      <TableView fx:id="requestTable" layoutX="204.0" layoutY="14.0" prefHeight="505.0" prefWidth="715.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="151.1999969482422" text="Название" />
+            <TableColumn fx:id="colCost" prefWidth="110.0" text="Стоимость" />
+            <TableColumn fx:id="colDate" prefWidth="174.0" text="Дата" />
+            <TableColumn fx:id="colCreator" prefWidth="148.0" text="Клиент" />
+            <TableColumn fx:id="colPhone" prefWidth="130.0" text="Телефон" />
+        </columns>
+      </TableView>
+      <Button fx:id="applyButton" layoutX="38.0" layoutY="318.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onApply" prefHeight="40.0" prefWidth="145.0" style="-fx-background-radius: 30,30,30,30;" text="Одобрить">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label layoutX="48.0" layoutY="66.0" text="Фильтрация">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="costFromInput" layoutX="54.0" layoutY="138.0" prefHeight="26.0" prefWidth="50.0" promptText="От" />
+      <TextField fx:id="costToInput" layoutX="119.0" layoutY="138.0" prefHeight="26.0" prefWidth="50.0" promptText="До" />
+      <TextField fx:id="nameInput" layoutX="55.0" layoutY="186.0" prefHeight="26.0" prefWidth="114.0" promptText="Название" />
+      <Label layoutX="58.0" layoutY="98.0" text="Стоимость">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Button layoutX="37.0" layoutY="247.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onApplyFilter" prefHeight="40.0" prefWidth="145.0" style="-fx-background-radius: 30,30,30,30;" text="Применить">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="37.0" layoutY="454.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onGoBack" prefHeight="40.0" prefWidth="145.0" style="-fx-background-radius: 30,30,30,30;" text="Назад">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="discardButton" layoutX="40.0" layoutY="373.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDiscard" prefHeight="40.0" prefWidth="145.0" style="-fx-background-radius: 30,30,30,30;" text="Отказ">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

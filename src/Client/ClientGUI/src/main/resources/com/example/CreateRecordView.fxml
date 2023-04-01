@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="223.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AddRecordController">
+   <children>
+      <Label layoutX="87.0" layoutY="14.0" prefHeight="20.0" prefWidth="115.0" text="Введите данные">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="typeCombo" layoutX="32.0" layoutY="41.0" prefHeight="26.0" prefWidth="219.0" promptText="Услуга" />
+      <Button layoutX="32.0" layoutY="171.0" mnemonicParsing="false" onAction="#onSave" prefHeight="26.0" prefWidth="95.0" text="Сохранить" />
+      <Button layoutX="154.0" layoutY="171.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="95.0" text="Отмена" />
+      <DatePicker fx:id="datePicker" layoutX="32.0" layoutY="82.0" prefHeight="26.0" prefWidth="219.0" promptText="Дата" />
+      <ComboBox fx:id="timeCombo" layoutX="33.0" layoutY="124.0" prefHeight="26.0" prefWidth="219.0" promptText="Время" />
+   </children>
+</AnchorPane>
